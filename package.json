@@ -9,7 +9,9 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/seederScript.js"
+    "data:import": "node backend/seederScript.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +22,8 @@
     "express": "^5.1.0",
     "mongoose": "^8.18.1",
     "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
