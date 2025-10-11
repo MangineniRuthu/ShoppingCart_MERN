@@ -15,7 +15,7 @@ export default function CartItems({ item }) {
       dispatch(removeItem(item._id))
   }
   return (
-    <div className="cartitem">
+    <div className="cartitem">  
       <div className="cartitem_img">
         <img src={item.imageUrl} alt="product name" />
       </div>

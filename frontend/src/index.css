@@ -579,3 +579,10 @@ img {
   height:100%;
   padding: 20px;
 }
+
+.cartEmpty{
+justify-items: center;
+}
+.cartEmpty button{
+ margin-left: 40%;
+}
