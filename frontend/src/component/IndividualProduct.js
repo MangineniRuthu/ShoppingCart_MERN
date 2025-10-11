@@ -18,7 +18,7 @@ export default function IndividualProduct() {
     const fetchData = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/products/${id}`
+          `https://shoppingcart-mern-fdxx.onrender.com/api/products/${id}`
         );
         setProduct(data);
         setLoading(false);
