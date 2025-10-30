@@ -4,14 +4,19 @@ import "../index";
 import { useSelector } from "react-redux";
 
 export default function Navbar({click}) {
-  const {totalQty=0}=useSelector((state)=>state.cart)
+  const {totalQty=0}=useSelector((state)=>state.cart);
+ 
   return (
     <nav className="navbar">
       <div className="navbar_logo">
         <img src="\images\m1.png" alt="company_logo"/>
       </div>
       <ul className="navbar_links">
+      
+         <li><Link to="/signUp">SignUp</Link></li>
+       
         <li>
+         
           <Link to="/cart" className="cart_link">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>

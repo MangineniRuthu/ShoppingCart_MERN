@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
   background:rgb(248, 243, 234);
   box-sizing: border-box;
 }
@@ -35,7 +35,7 @@ img {
 }
 .navbar_links > li {
   padding-left: 1rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family:cursive;
 }
 .navbar_links > li > a {
   text-decoration: none;
@@ -238,7 +238,8 @@ img {
   margin:8px auto;
 }
 .product > img {
-  width: 100%;
+  width:100%;
+  height:30%;
   object-fit: contain;
   border-radius: 8px;
 
@@ -580,9 +581,51 @@ img {
   padding: 20px;
 }
 
-.cartEmpty{
-justify-items: center;
+
+/* Form Css */
+/*.form-outline{
+  align-items: center;
+  margin:50px 100px 10px 100px;
+  box-shadow: 0px 2px 6px 3px silver;
+  
+}*/
+.form-outline {
+  margin: 50px auto;
+  width: 500px;              
+  padding: 30px 20px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  background: #fff;            
 }
-.cartEmpty button{
- margin-left: 40%;
+.form-outline h3{
+  text-align: center;
+  color:brown;
+}
+.form{
+  margin-top: 20px;
+  display:flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.form input{
+  text-align: center;
+  border:none;
+  text-decoration: none;
+  padding:15px;
+  margin:5px 50px 10px 50px;
+  border-radius: 5px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.form input:focus {
+  outline: none;
+  border-color: #007bff;       
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+.loginLink{
+  text-decoration: none;
+  color:red;
+   font-family:cursive;
+}
+h5,h3{
+    font-family:cursive;
 }

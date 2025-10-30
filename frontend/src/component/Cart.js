@@ -2,7 +2,6 @@ import React from 'react'
 import CartItems from './CartItems'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
-import CheckOut from './CheckOut';
 import { useDispatch } from "react-redux";
 import { clearCart} from '../redux/reducer/cartReducer';
 

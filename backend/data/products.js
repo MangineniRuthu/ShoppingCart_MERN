@@ -1,4 +1,4 @@
-const products = [
+/*const products = [
   {
     name: "Classic White Poplin Shirt",
     imageUrl: "/images/p1.jpeg",
@@ -90,4 +90,6 @@ const products = [
 ];
 
 
-module.exports=products;
+
+
+module.exports=products;*/
