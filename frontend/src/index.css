@@ -228,7 +228,7 @@ img {
 /*Product Css*/
 
 .product {
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
@@ -611,7 +611,7 @@ img {
   text-align: center;
   border:none;
   text-decoration: none;
-  padding:15px;
+  padding:10px;
   margin:5px 50px 10px 50px;
   border-radius: 5px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -624,8 +624,119 @@ img {
 .loginLink{
   text-decoration: none;
   color:red;
-   font-family:cursive;
+  font-family:cursive;
 }
 h5,h3{
     font-family:cursive;
+}
+
+/* Admin Design */
+.admin {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background: #fdf9f3; 
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.admin-left {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+}
+
+.brand-logo {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.brand-logo:hover {
+  transform: scale(1.03);
+}
+
+
+.admin-right {
+  flex: 0.6;
+  padding: 1rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #3d2e21;
+}
+
+.admin-right h3 {
+  font-family: 'Caveat', cursive; 
+  font-size: 2rem;
+  color: #2d1a0f;
+}
+
+.admin-right h5 {
+  line-height: 1.6;
+  font-weight: 400;
+  color: #4a3b2f;
+}
+
+.admin-right i {
+  color: #d97706;
+}
+
+/* Upcoming Design */
+.brand {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #fefaf5;
+}
+
+.brand h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2d1a0f;
+}
+
+.future-brand {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 0 2rem;
+}
+
+.future-brand img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.future-brand img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .admin {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .admin-right {
+    padding: 1rem;
+  }
+
+  .brand-logo {
+    max-width: 250px;
+  }
 }

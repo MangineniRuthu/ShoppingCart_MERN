@@ -10,7 +10,8 @@ import { ToastContainer } from "react-toastify";
 import SignUp from "./component/SignUp";
 import "react-toastify/dist/ReactToastify.css";
 import CheckOut from "./component/CheckOut";
-import Login from "./component/Login"
+import Login from "./component/Login";
+import Admin from "./component/Admin";
 function App() {
   const [sideToggle,setSideToggle]=useState(false)
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/product/:id" element={<IndividualProduct/>}/>
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/checkOut" element={<CheckOut/>}/>
+          <Route path="/admin" element={<Admin/>}/>
         </Routes>
         <ToastContainer position="top-right" autoClose={2000} />
       </main>

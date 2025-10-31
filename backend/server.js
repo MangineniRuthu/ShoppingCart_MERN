@@ -10,7 +10,7 @@ const middlewareRoutes=require("./routes/middlewareRoutes.js")
 connectDB();
 const app=express();
 app.use(express.json());
-app.use(cors({origin:"*"}));
+app.use(cors());
 app.use("/api/products",productRoutes);
 app.use("/register",registerRoutes);
 app.use("/login",loginRoutes)

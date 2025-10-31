@@ -1,8 +1,11 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
 import "../index";
 import axios from "axios";
+import AuthContext from './Context/AuthContext';
+import {Navigate} from "react-router-dom"
 
 export default function Login() {
+ const [token,setToken]=useContext(AuthContext);
   const [data,setData]=useState({
      email:'',password:''
   })
@@ -13,8 +16,11 @@ export default function Login() {
   const handleSubmit=(e)=>{
     e.preventDefault();
     axios.post("https://shoppingcart-mern-fdxx.onrender.com/login",data).then(
-      res=>alert(res.data)
+      res=>setToken(res.data.token)
     )
+  }
+  if(token){
+    return <Navigate to="/" />
   }
   return (
     <div className='form-outline'>
