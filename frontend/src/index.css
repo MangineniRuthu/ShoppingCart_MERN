@@ -645,7 +645,11 @@ h5,h3{
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: all 0.3s ease-in-out;
 }
-
+@media(max-width:600px){
+  .admin{
+    width:80%;
+  }
+}
 
 .admin-left {
   flex: 0.4;
@@ -691,10 +695,26 @@ h5,h3{
 }
 
 /* Upcoming Design */
-.brand {
+/*.brand {
   text-align: center;
   padding: 3rem 1rem;
   background: #fefaf5;
+}*/
+.brand{
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 2rem;
+  background: #fdf9f3; 
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+@media(max-width:600px){
+  .brand{
+    width:80%;
+  }
 }
 
 .brand h2 {
@@ -702,6 +722,7 @@ h5,h3{
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #2d1a0f;
+  text-align: center;
 }
 
 .future-brand {
