@@ -30,9 +30,9 @@ export default function IndividualProduct() {
     fetchData();
   }, [id]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
-  if (!product) return <p>Product not found.</p>;
+  if (loading) return <p className="indP_load">Loading Products!!!</p>;
+  if (error) return <p className="indP_load">{error}</p>;
+  if (!product) return <p className="indP_load">Product not found!!!</p>;
 
   return (
     <div className="product_ind">
@@ -74,7 +74,8 @@ export default function IndividualProduct() {
               }}
             >
               Add To Cart
-            </button>
+            </button><br/>
+            <button onClick={()=>{navigate("/")}}>View More</button>
             
           </p>
         </div>

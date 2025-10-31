@@ -27,7 +27,7 @@ export default function Home() {
     <div className="home">
       {data && (
         <>
-          <h2 className="home_title">Latest Products</h2>
+          <h2 className="home_title">Find Something You’ll Love</h2>
           <div className="home_products">
             <Product />
           </div>
