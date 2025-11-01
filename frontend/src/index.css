@@ -225,6 +225,9 @@ img {
   .home_products {
     grid-template-columns: repeat(3, 1fr);
   }
+  .home{
+    width:90%;
+  }
 }
 
 @media (max-width: 760px) {
@@ -323,30 +326,30 @@ img {
   background: #000;
   color: #fff;
 }
-@media (max-width: 960px) {
+@media (max-width: 950px) {
   .product {
-    width: 250px;
+    width: 200px;
   }
 }
-@media (max-width: 885px) {
+@media (max-width: 850px) {
   .product {
-    width: 220px;
+    width: 180px;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 770px) {
   .product {
-    width: 210px;
+    width: 200px;
   }
 }
 @media (max-width: 756px) {
   .product {
-    width: 280px;
+    width: 200px;
   }
 }
 @media (max-width: 651px) {
   .product {
-    width: 250px;
+    width: 200px;
   }
 }
 @media (max-width: 585px) {
@@ -455,6 +458,37 @@ img {
      max-width: 400px;
   }
 }
+@media(max-width:870px){
+  .product_ind{
+     max-width: 800px;
+  }
+}
+@media(max-width:800px){
+  .product_ind{
+     max-width: 700px;
+  }
+}
+@media(max-width:700px){
+  .product_ind{
+     max-width: 500px;
+  }
+}
+@media(max-width:650px){
+  .product_ind{
+     max-width: 500px;
+  }
+}
+@media(max-width:550px){
+  .product_ind{
+     max-width: 400px;
+  }
+}
+@media(max-width:450px){
+  .product_ind{
+     max-width: 300px;}
+}
+
+
 
 /* cart-item css*/
 
@@ -711,6 +745,12 @@ h5,h3{
     width:75%;
   }
 }
+@media(max-width:800px){
+  .admin{
+    width:80%;
+  }
+}
+
 
 .admin-left {
   flex: 0.4;
