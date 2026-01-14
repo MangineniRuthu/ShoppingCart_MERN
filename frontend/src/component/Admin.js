@@ -8,7 +8,7 @@ export default function Admin() {
       <div className="admin">
         <div className="admin-left">
           <img
-            src="./images/ruth2.jpeg"
+            src="./images/ruth3.jpeg"
             alt="brand_head_logo"
             className="brand-logo"
           />
